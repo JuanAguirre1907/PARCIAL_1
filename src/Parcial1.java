@@ -38,11 +38,9 @@ public class Parcial1 {
                 }
             }
         }
-        System.out.println("Si quiere jugar de nuevo presione enter, si desea salir del juego presione Q ");
+        System.out.println("Si quiere jugar de nuevo presione enter, si desea salir del juego presione Q seguido de un enter ");
         Continuar = scanner.nextLine();
         if(Continuar.equals("Q") || Continuar.equals("q")){
-            scanner.nextLine();
-
         }else {
             iniciarJuego();
         }
