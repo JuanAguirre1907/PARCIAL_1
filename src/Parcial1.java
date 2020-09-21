@@ -8,8 +8,7 @@ public class Parcial1 {
         int Suma = 0, Numero, numeroCasa;
         String Continuar;
 
-        System.out.println(" WELCOME TO JUAN'S 21 BLACKJACK PROGRAM\n " +
-                "    Presione enter para iniciar");
+        System.out.println(" WELCOME TO JUAN'S 21 BLACKJACK GAME\n " + "    Presione enter para iniciar");
         scanner.nextLine();
         while (true) {
 
@@ -21,7 +20,7 @@ public class Parcial1 {
                 System.out.println("excediste el limite sumando un total de "+Suma+" perdiste :P");
                 break;
             }
-            System.out.println("Su número actual es "+Suma+". Si desea plantarse presiona x seguido de un enter de lo contrario presiona enter para generar mas numeros ");
+            System.out.println("Su número actual es "+Suma+". Si desea plantarse presiona x seguido de un enter de lo contrario presiona enter para generar un nuevo número ");
             Continuar = scanner.nextLine();
 
             if (Continuar.equals("x") || Continuar.equals("X")) {
@@ -31,15 +30,15 @@ public class Parcial1 {
                     System.out.println("Tu número es "+Suma+" al ser menor al de la casa has perdido");
                     break;
                 } else if (Suma == numeroCasa) {
-                    System.out.println("los numeros son iguales, es un empate ");
+                    System.out.println("Los números son iguales, es un empate ");
                     break;
                 } else {
-                    System.out.println("Tu numero es mayor al de la casa has ganado ");
+                    System.out.println("Tu número es mayor al de la casa has ganado ");
                     break;
                 }
             }
         }
-        System.out.println("Si quiere jugar de nuevo presione enter, si desea salir del juego preione Q ");
+        System.out.println("Si quiere jugar de nuevo presione enter, si desea salir del juego presione Q ");
         Continuar = scanner.nextLine();
         if(Continuar.equals("Q") || Continuar.equals("q")){
             scanner.nextLine();
